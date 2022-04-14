@@ -1,4 +1,4 @@
-import classes from "./util-css.module.css";
+import classNamees from "./util-css.module.css";
 import LinearDeterminate from "../components/loading";
 import Image from "next/image";
 
@@ -26,11 +26,11 @@ export default function Accordian() {
       <LinearDeterminate />
       <div className="d-flex align-items-center justify-content-center">
         <div className="container m-5">
-          <div class="accordion" id="accordionExample">
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingOne">
+          <div className="accordion" id="accordionExample">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingOne">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed`}
+                  className={`accordion-button ${classes.accordionButton} collapsed`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
@@ -42,27 +42,27 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse "
+                className="accordion-collapse collapse "
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
+                <div className="accordion-body">
+                  <strong>This is the first items accordion body.</strong> It is
+                  shown by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
+                  with custom CSS or overriding our default variables. Its also
                   worth noting that just about any HTML can go within the{" "}
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>
               </div>
             </div>
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingTwo">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingTwo">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed`}
+                  className={`accordion-button ${classes.accordionButton} collapsed`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
@@ -74,27 +74,27 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseTwo"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
+                <div className="accordion-body">
+                  <strong>This is the second items accordion body.</strong> It
                   is hidden by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
+                  with custom CSS or overriding our default variables. Is also
                   worth noting that just about any HTML can go within the{" "}
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>
               </div>
             </div>
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingThree">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingThree">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed`}
+                  className={`accordion-button ${classes.accordionButton} collapsed`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseThree"
@@ -106,27 +106,27 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseThree"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
+                <div className="accordion-body">
+                  <strong>This is the third items accordion body.</strong> It is
+                  hidden by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
+                  with custom CSS or overriding our default variables. Its also
                   worth noting that just about any HTML can go within the{" "}
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>
               </div>
             </div>
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingOne">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingOne">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed`}
+                  className={`accordion-button ${classes.accordionButton} collapsed`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFour"
@@ -138,27 +138,27 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseFour"
-                class="accordion-collapse collapse "
+                className="accordion-collapse collapse "
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
+                <div className="accordion-body">
+                  <strong>This is the first items accordion body.</strong> It is
+                  shown by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
+                  with custom CSS or overriding our default variables. Its also
                   worth noting that just about any HTML can go within the{" "}
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>
               </div>
             </div>
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingOne">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingOne">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed`}
+                  className={`accordion-button ${classes.accordionButton} collapsed`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseFive"
@@ -170,27 +170,27 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseFive"
-                class="accordion-collapse collapse "
+                className="accordion-collapse collapse "
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
+                <div className="accordion-body">
+                  <strong>This is the first items accordion body.</strong> It is
+                  shown by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
+                  with custom CSS or overriding our default variables. Its also
                   worth noting that just about any HTML can go within the{" "}
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>
               </div>
             </div>
-            <div class={`accordion-item ${classes.blackborderoverride}`}>
-              <h2 class="accordion-header" id="headingOne">
+            <div className={`accordion-item ${classes.blackborderoverride}`}>
+              <h2 className="accordion-header" id="headingOne">
                 <button
-                  class={`accordion-button ${classes.accordionButton} collapsed ${classes.accordionButtonLast}`}
+                  className={`accordion-button ${classes.accordionButton} collapsed ${classes.accordionButtonLast}`}
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseSix"
@@ -202,18 +202,18 @@ export default function Accordian() {
               </h2>
               <div
                 id="collapseSix"
-                class="accordion-collapse collapse "
+                className="accordion-collapse collapse "
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
+                <div className="accordion-body">
+                  <strong>This is the first item accordion body.</strong> It is
+                  shown by default, until the collapse plugin adds the
                   appropriate classes that we use to style each element. These
                   classes control the overall appearance, as well as the showing
                   and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the{" "}
+                  with custom CSS or overriding our default variables. It also
+                  worth noting that just about any HTML can go within the
                   <code>.accordion-body</code>, though the transition does limit
                   overflow.
                 </div>

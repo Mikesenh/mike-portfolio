@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Portfolio() {
   return (
     <>
-      <div class="container">
+      <div className="container">
         <div className="row mt-5 mx-3">
           <div className="col-9 d-flex  justify-content-center flex-column">
             <h1 className={`${classes.textrighteous} `}>

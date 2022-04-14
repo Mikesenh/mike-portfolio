@@ -11,11 +11,13 @@ function MyApp({ Component, pageProps }) {
 
   //💡 I'm still trying to figure out how to have everythg load smoother, it works! but I know it could be faster!
 
+  /*
   if (DynamicComponent) {
     useEffect(() => {
       setTimeout(() => setLoading(false), 1000);
     }, []);
   }
+  */
 
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
@@ -23,13 +25,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {loading === false ? (
-        <NavFoot>
-          <Component {...pageProps} />
-        </NavFoot>
-      ) : (
-        <LinearDeterminate />
-      )}
+      <NavFoot>
+        <Component {...pageProps} />
+      </NavFoot>
     </>
   );
 }

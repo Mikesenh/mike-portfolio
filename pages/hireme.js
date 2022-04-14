@@ -36,9 +36,9 @@ export default function HireMe() {
             width={400}
             height={400}
           />
-          <h2 className={`${classes.textrightious}`}>Let's Chat!</h2>
+          <h2 className={`${classes.textrightious}`}>Lets Chat!</h2>
           <p className={`${classes.textdosis}`}>
-            If you think I'd be a good fit, feel free to contact me!
+            If you think I would be a good fit, feel free to contact me!
           </p>
         </div>
       </div>
@@ -101,41 +101,41 @@ export default function HireMe() {
                 className={`d-flex flex-column pt-3 pb-5 ${classes.textdosis}`}
               >
                 <form className="mx-5" onSubmit={handleOnSubmit}>
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Name / Company</label>
-                    <input name="name" type="text" class="form-control" />
+                    <input name="name" type="text" className="form-control" />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Email</label>
                     <input
                       name="email"
                       type="email"
-                      class="form-control"
+                      className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <label>Title / Topic</label>
                     <input
                       name="topic"
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="exampleInputPassword1"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
+                  <div className="form-group">
+                    <label htmlFor="exampleFormControlTextarea1">Message</label>
                     <textarea
                       name="message"
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="exampleFormControlTextarea1"
                       rows="3"
                     ></textarea>
                   </div>
 
-                  <button type="submit" class="btn btn-primary mt-2">
+                  <button type="submit" className="btn btn-primary mt-2">
                     Send Message
                   </button>
                 </form>

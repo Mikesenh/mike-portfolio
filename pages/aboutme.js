@@ -36,19 +36,19 @@ export default function AboutMe() {
             >
               <div className={`${classes.textdosis} w-75`}>
                 <p className={``}>
-                  I’d was born and raised in Salt Lake City, Utah, and lived
-                  here for my whole life. I’m a first-generation college
-                  student, one of many in my neighborhood. I always loved
-                  drawing ever since I was little and that extends to loving art
-                  and design. Although the stigma of pursuing art was frowned
-                  upon in my family, I still opted to find a middle ground,
-                  programming was that middle ground.
+                  I was born and raised in Salt Lake City, Utah, and lived here
+                  for my whole life. I am a first-generation college student,
+                  one of many in my neighborhood. I always loved drawing ever
+                  since I was little and that extends to loving art and design.
+                  Although the stigma of pursuing art was frowned upon in my
+                  family, I still opted to find a middle ground, programming was
+                  that middle ground.
                 </p>
                 <p className={``}>
                   I grew up with those late 2000s computers with extra thick
                   screens and all they were where good for was surfing the web
                   with very slow dial-up internet. I remember wanting to learn
-                  how to code, but nobody knew how to code, so it wasn't until
+                  how to code, but nobody knew how to code, so it was not until
                   high school roughly the mid-2010s were their sites were
                   willing to teach coding courses for free. I took the
                   opportunity and it turns out I enjoyed coding.
@@ -225,10 +225,10 @@ export default function AboutMe() {
                   height={50}
                 />
                 <h4 className={`${classes.textrighteous} mt-2`}>
-                  I Don’t Need Coffee
+                  I Do Not Need Coffee
                 </h4>
                 <p>
-                  I don’t need coffee to code, that's rare in the development
+                  I do not need coffee to code, that's rare in the development
                   world! (and that can save you a pretty penny!
                 </p>
               </div>

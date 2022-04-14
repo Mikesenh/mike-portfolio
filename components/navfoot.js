@@ -33,7 +33,7 @@ export default function NavFoot(props) {
                 className={`navbar-nav me-auto mb-2 mb-lg-0 ${classes.textrighteous}`}
               >
                 <li className="nav-item">
-                  <Link href="/aboutme">
+                  <Link href="/aboutme" passHref>
                     <a
                       className={`nav-link ${classes.hoverBlue}`}
                       aria-current="page"
@@ -44,14 +44,14 @@ export default function NavFoot(props) {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/portfolio">
+                  <Link href="/portfolio" passHref>
                     <a className={`nav-link ${classes.hoverBlue}`} href="#">
                       Portfolio
                     </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/hireme">
+                  <Link href="/hireme" passHref>
                     <a className={`nav-link ${classes.hoverBlue}`} href="#">
                       Hire Me!
                     </a>
@@ -82,13 +82,13 @@ export default function NavFoot(props) {
                 Salt Lake City, Utah <br></br>
                 801-634-7693
               </p>
-              <Link href="/aboutme">
+              <Link href="/aboutme" passHref>
                 <h6 className={`${classes.hoverBlue}`}>About Me</h6>
               </Link>
-              <Link href="/portfolio">
+              <Link href="/portfolio" passHref>
                 <h6 className={`${classes.hoverBlue}`}>Portflio</h6>
               </Link>
-              <Link href="/hireme">
+              <Link href="/hireme" passHref>
                 <h6 className={`${classes.hoverBlue}`}>Hire Me!</h6>
               </Link>
             </div>
