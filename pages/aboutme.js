@@ -29,7 +29,7 @@ export default function AboutMe() {
                 height={400}
               />
             </FadeFrame>
-            <h1 className={`${classes.colorblue} `}>Hi, I'm Michael!</h1>
+            <h1 className={`${classes.colorblue} `}>Hi, I&apos;m Michael!</h1>
 
             <div
               className={`d-flex flex-column align-items-center justify-content-center`}
@@ -228,8 +228,8 @@ export default function AboutMe() {
                   I Do Not Need Coffee
                 </h4>
                 <p>
-                  I do not need coffee to code, that's rare in the development
-                  world! (and that can save you a pretty penny!
+                  I do not need coffee to code, that&apos;s rare in the
+                  development world! (and that can save you a pretty penny!
                 </p>
               </div>
             </FlyInLeft>
