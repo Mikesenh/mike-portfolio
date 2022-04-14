@@ -2,12 +2,30 @@ import Image from "next/image";
 import classes from "./util-css.module.css";
 import TextField from "@mui/material/TextField";
 import * as React from "react";
+import { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function HireMe() {
   const [value, setValue] = React.useState("Controlled");
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+  const router = useRouter();
+
+  async function handleOnSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch("/api/mail", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+
+    //router.push("/thanks");
+  }
+
   return (
     <>
       <div className="container">
@@ -49,7 +67,7 @@ export default function HireMe() {
                     width={25}
                     height={25}
                   />
-                  <h5 className="mx-2">(801) 634-7693</h5>
+                  <h5 className="mx-2">(801) 634-****</h5>
                 </div>
                 <div className="d-flex align-items-center my-2">
                   <Image
@@ -82,28 +100,25 @@ export default function HireMe() {
               <div
                 className={`d-flex flex-column pt-3 pb-5 ${classes.textdosis}`}
               >
-                <form className="mx-5">
+                <form className="mx-5" onSubmit={handleOnSubmit}>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Name / Company</label>
+                    <label>Name / Company</label>
+                    <input name="name" type="text" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label>Email</label>
                     <input
-                      type="text"
+                      name="email"
+                      type="email"
                       class="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputEmail1"> Contact Info</label>
+                    <label>Title / Topic</label>
                     <input
-                      type="text"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Title / Topic</label>
-                    <input
+                      name="topic"
                       type="text"
                       class="form-control"
                       id="exampleInputPassword1"
@@ -112,11 +127,14 @@ export default function HireMe() {
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
                     <textarea
+                      name="message"
+                      type="text"
                       class="form-control"
                       id="exampleFormControlTextarea1"
                       rows="3"
                     ></textarea>
                   </div>
+
                   <button type="submit" class="btn btn-primary mt-2">
                     Send Message
                   </button>
