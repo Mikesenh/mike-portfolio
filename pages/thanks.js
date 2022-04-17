@@ -14,7 +14,8 @@ export default function Thanks() {
         />
         <h1 className="mt-3">Thanks, for Reach Out!</h1>
         <p className="">
-          You'll get a email from my bot, which just confirms that it works!
+          You&apos;ll get a email from my bot, which just confirms that it
+          works!
         </p>
         <Link href="/" passHref>
           <button type="submit" className="btn btn-primary ">

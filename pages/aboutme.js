@@ -13,7 +13,6 @@ import FlyInRight from "../components/fly-in-right";
 import FlyInLeft from "../components/fly-in-left";
 import FadeFrame from "../components/fade-frame";
 //Components
-import Accordian from "../components/accordion";
 
 export default function AboutMe() {
   return (
@@ -321,9 +320,9 @@ export default function AboutMe() {
                   >
                     <div className="accordion-body">
                       I can do both! In college there were a lot of solo
-                      projects that I'd got a perfect score on, the same goes
-                      for team projects. I honestly enjoy team projects a bit
-                      more as collaboration is more fun and enjoyable.
+                      projects that I&apos;d got a perfect score on, the same
+                      goes for team projects. I honestly enjoy team projects a
+                      bit more as collaboration is more fun and enjoyable.
                     </div>
                   </div>
                 </div>
@@ -349,11 +348,11 @@ export default function AboutMe() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      It's a lot of reformatting over and over again, so first I
-                      make sure that everything works not caring about how it
-                      looks, and then later go back to making it look pretty.
-                      Sometimes I do become obsessed and will redo a project to
-                      make sure I reorganize and optimize everything!
+                      It&apos;s a lot of reformatting over and over again, so
+                      first I make sure that everything works not caring about
+                      how it looks, and then later go back to making it look
+                      pretty. Sometimes I do become obsessed and will redo a
+                      project to make sure I reorganize and optimize everything!
                     </div>
                   </div>
                 </div>
@@ -409,8 +408,9 @@ export default function AboutMe() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      In short, I'm looking for a Competitive Salary and I'll
-                      impress you, with my work ethic, knowledge, and skills!
+                      In short, I&apos;m looking for a Competitive Salary and
+                      I&apos;ll impress you, with my work ethic, knowledge, and
+                      skills!
                     </div>
                   </div>
                 </div>

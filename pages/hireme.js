@@ -1,12 +1,9 @@
 import Image from "next/image";
 import classes from "./util-css.module.css";
-import TextField from "@mui/material/TextField";
+
 import * as React from "react";
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+
 import Mailroom from "../components/mailroom";
-import Accordian from "../components/accordion";
 
 export default function HireMe() {
   return (
@@ -25,21 +22,21 @@ export default function HireMe() {
           </p>
           <div className="d-flex align-items-center justify-content-center">
             <a
-              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              className={`btn btn-dark mx-2 ${classes.bluebackground}`}
               href="https://www.linkedin.com/in/michael-tran-20462112a/"
               role="button"
             >
               Linkedin
             </a>
             <a
-              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              className={`btn btn-dark mx-2 ${classes.bluebackground}`}
               href="https://docs.google.com/document/d/1zGDkm_fd8ZLPLw8e0TPzhI5FS8-Xvpyp/edit?usp=sharing&ouid=112932056368148513921&rtpof=true&sd=true"
               role="button"
             >
               View Resume
             </a>
             <a
-              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              className={`btn btn-dark mx-2 ${classes.bluebackground}`}
               href="https://github.com/Tewinsky"
               role="button"
             >
@@ -174,9 +171,9 @@ export default function HireMe() {
                   >
                     <div className="accordion-body">
                       I can do both! In college there were a lot of solo
-                      projects that I'd got a perfect score on, the same goes
-                      for team projects. I honestly enjoy team projects a bit
-                      more as collaboration is more fun and enjoyable.
+                      projects that I&apos;d got a perfect score on, the same
+                      goes for team projects. I honestly enjoy team projects a
+                      bit more as collaboration is more fun and enjoyable.
                     </div>
                   </div>
                 </div>
@@ -202,11 +199,11 @@ export default function HireMe() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      It's a lot of reformatting over and over again, so first I
-                      make sure that everything works not caring about how it
-                      looks, and then later go back to making it look pretty.
-                      Sometimes I do become obsessed and will redo a project to
-                      make sure I reorganize and optimize everything!
+                      It&apos;s a lot of reformatting over and over again, so
+                      first I make sure that everything works not caring about
+                      how it looks, and then later go back to making it look
+                      pretty. Sometimes I do become obsessed and will redo a
+                      project to make sure I reorganize and optimize everything!
                     </div>
                   </div>
                 </div>
@@ -262,8 +259,9 @@ export default function HireMe() {
                     data-bs-parent="#accordionExample"
                   >
                     <div className="accordion-body">
-                      In short, I'm looking for a Competitive Salary and I'll
-                      impress you, with my work ethic, knowledge, and skills!
+                      In short, I&apos;m looking for a Competitive Salary and
+                      I&apos;ll impress you, with my work ethic, knowledge, and
+                      skills!
                     </div>
                   </div>
                 </div>
