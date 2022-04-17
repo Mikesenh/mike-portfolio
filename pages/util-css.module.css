@@ -161,6 +161,8 @@
 
 .accordionButtonLast {
   border-bottom-style: solid;
+  border-left: 0px;
+  border-right: 0px;
   border-width: 5px;
   border-color: black;
   border-radius: none;

@@ -5,27 +5,10 @@ import * as React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Mailroom from "../components/mailroom";
+import Accordian from "../components/accordion";
 
 export default function HireMe() {
-  const [value, setValue] = React.useState("Controlled");
-  const router = useRouter();
-
-  async function handleOnSubmit(e) {
-    e.preventDefault();
-    const formData = {};
-
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-    fetch("/api/mail", {
-      method: "post",
-      body: JSON.stringify(formData),
-    });
-
-    //router.push("/thanks");
-  }
-
   return (
     <>
       <div className="container">
@@ -40,9 +23,33 @@ export default function HireMe() {
           <p className={`${classes.textdosis}`}>
             If you think I would be a good fit, feel free to contact me!
           </p>
+          <div className="d-flex align-items-center justify-content-center">
+            <a
+              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              href="https://www.linkedin.com/in/michael-tran-20462112a/"
+              role="button"
+            >
+              Linkedin
+            </a>
+            <a
+              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              href="https://docs.google.com/document/d/1zGDkm_fd8ZLPLw8e0TPzhI5FS8-Xvpyp/edit?usp=sharing&ouid=112932056368148513921&rtpof=true&sd=true"
+              role="button"
+            >
+              View Resume
+            </a>
+            <a
+              class={`btn btn-dark mx-2 ${classes.bluebackground}`}
+              href="https://github.com/Tewinsky"
+              role="button"
+            >
+              Github
+            </a>
+          </div>
         </div>
       </div>
       {/*Break*/}
+
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-6 my-5">
@@ -100,49 +107,19 @@ export default function HireMe() {
               <div
                 className={`d-flex flex-column pt-3 pb-5 ${classes.textdosis}`}
               >
-                <form className="mx-5" onSubmit={handleOnSubmit}>
-                  <div className="form-group">
-                    <label>Name / Company</label>
-                    <input name="name" type="text" className="form-control" />
-                  </div>
-                  <div className="form-group">
-                    <label>Email</label>
-                    <input
-                      name="email"
-                      type="email"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label>Title / Topic</label>
-                    <input
-                      name="topic"
-                      type="text"
-                      className="form-control"
-                      id="exampleInputPassword1"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="exampleFormControlTextarea1">Message</label>
-                    <textarea
-                      name="message"
-                      type="text"
-                      className="form-control"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-
-                  <button type="submit" className="btn btn-primary mt-2">
-                    Send Message
-                  </button>
-                </form>
+                <Mailroom />
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        className={`container-fluid pt-5 mt-5 ${classes.theblacklineNoMediaTop} mb-3`}
+      >
+        <h3 className={`text-center ${classes.textrighteous}`}>
+          Questions I’ll Answer in Advance:
+        </h3>
+        <Accordian />
       </div>
     </>
   );

@@ -36,7 +36,7 @@ export default function Portfolio() {
           principles and figured I’d build my first portfolio website based on
           that theme, something that reflects me.
         </p>
-        <a href="">
+        <a href="https://www.figma.com/file/MvWlbZmdBoMhswccoilhpg/My-Jumpstart!?node-id=0%3A1">
           Click Here to Access the Figma File: Wireframe & Prototypes
         </a>
         <h2 className={`${classes.textrighteous} text-center mt-5 mb-3`}>
@@ -96,7 +96,10 @@ export default function Portfolio() {
           wanted to keep it simple seeing that I only had one month to design
           and code it all!
         </p>
-        <a className="mb-5 pb-5" href="">
+        <a
+          className="mb-5 pb-5"
+          href="https://github.com/Tewinsky/mike-portfolio"
+        >
           Click Here for the Github Repo: Code & Developement
         </a>
       </div>

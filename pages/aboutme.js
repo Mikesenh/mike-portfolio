@@ -12,6 +12,8 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import FlyInRight from "../components/fly-in-right";
 import FlyInLeft from "../components/fly-in-left";
 import FadeFrame from "../components/fade-frame";
+//Components
+import Accordian from "../components/accordion";
 
 export default function AboutMe() {
   return (
@@ -257,6 +259,14 @@ export default function AboutMe() {
             </FlyInLeft>
           </div>
         </div>
+      </div>
+      <div
+        className={`container-fluid pt-5 mt-5 ${classes.theblacklineNoMediaTop} mb-3`}
+      >
+        <h3 className={`text-center ${classes.textrighteous}`}>
+          Questions I’ll Answer in Advance:
+        </h3>
+        <Accordian />
       </div>
     </>
   );
