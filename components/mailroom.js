@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import classes from "../pages/util-css.module.css";
+import classes from "./util-css.module.css";
 
 export default function Mailroom() {
   const router = useRouter();

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import classes from "../pages/util-css.module.css";
+import classes from "./util-css.module.css";
 
 export default function NavFoot(props) {
   return (

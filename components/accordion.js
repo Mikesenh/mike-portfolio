@@ -1,4 +1,4 @@
-import classes from "../pages/util-css.module.css";
+import classes from "./util-css.module.css";
 
 export default function Accordian() {
   return (
@@ -28,7 +28,7 @@ export default function Accordian() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                I mainly get my tech news from YouTube and Google News.
+                  I mainly get my tech news from YouTube and Google News.
                 </div>
               </div>
             </div>

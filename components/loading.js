@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
-import classes from "../pages/util-css.module.css";
+import classes from "./util-css.module.css";
 import Image from "next/image";
 
 export default function LinearDeterminate() {
